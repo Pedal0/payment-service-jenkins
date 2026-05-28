@@ -20,7 +20,7 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                sh 'pytest --tb=short -v'
+                sh 'python3 -m pytest --tb=short -v'
             }
         }
     }
